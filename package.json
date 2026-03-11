@@ -1,4 +1,13 @@
 {
+  "name": "react-blog-app-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix React-blog-app run dev",
+    "build": "npm --prefix React-blog-app run build",
+    "lint": "npm --prefix React-blog-app run lint",
+    "preview": "npm --prefix React-blog-app run preview",
+    "install:app": "npm --prefix React-blog-app install"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
     "react-redux": "^9.2.0"

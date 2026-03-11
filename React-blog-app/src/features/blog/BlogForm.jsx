@@ -1,17 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBlog, updateBlog } from './feature/blog/BlogSlice';
+import { addBlog, updateBlog } from './BlogSlice';
 
 const BlogForm = ({ existingBlog = null, onSave }) => {
   const isEditing = Boolean(existingBlog);
   const [title, setTitle] = useState(existingBlog?.title ?? '');
   const [content, setContent] = useState(existingBlog?.content ?? '');
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    setTitle(existingBlog?.title ?? '');
-    setContent(existingBlog?.content ?? '');
-  }, [existingBlog]);
 
   const handleSubmit = (event) => {
     event.preventDefault();

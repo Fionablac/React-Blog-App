@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import BlogItem from './feature/blog/BlogItem';
+import BlogItem from './BlogItem';
 
 const BlogList = () => {
   const blogs = useSelector((state) => state.blog.blogs);

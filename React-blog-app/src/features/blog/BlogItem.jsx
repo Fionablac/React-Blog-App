@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import BlogForm from './feature/blog/BlogForm';
-import { deleteBlog } from './feature/blog/BlogSlice';
+import BlogForm from './BlogForm';
+import { deleteBlog } from './BlogSlice';
 
 const BlogItem = ({ blog }) => {
   const [isEditing, setIsEditing] = useState(false);

@@ -1,6 +1,6 @@
-// import React from 'react';
-import BlogForm from '../features/blog/BlogForm';
-import BlogList from '../features/blog/BlogList';
+import BlogForm from './features/blog/BlogForm';
+import BlogList from './features/blog/BlogList';
+
 function App() {
   return (
     <main className="blog-app-shell">
@@ -15,7 +15,7 @@ function App() {
 
         <BlogForm />
         <BlogList />
-  </section>
+      </section>
     </main>
   );
 }
